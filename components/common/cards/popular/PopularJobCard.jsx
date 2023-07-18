@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text, TouchableOpacity, Image } from 'react-native'
-
+import { useRouter } from 'expo-router'
 import styles from './popularjobcard.style'
 import  { checkImageURL } from "../../../../utils"
 
-const PopularJobCard = ({ item, selectedJob, handleCardPress}) => {
+const PopularJobCard = ({ item, selectedJob, handleCardPress}) => {  
   return (
     <TouchableOpacity
       style={styles.container(selectedJob, item)}

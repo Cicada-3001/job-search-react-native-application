@@ -18,15 +18,14 @@ const Footer = ({url}) => {
           style={styles.likeBtnImage}
           > 
         </Image>
-
       </TouchableOpacity>
 
-
+      
       <TouchableOpacity
-        style={ styles.applyBtn}
+        style={ styles.applyBtn }
         onPress={() => Linking.openURL(url)}
       > 
-        <Text style={styles.applyBtnText}>Apply for jobs</Text>
+        <Text style={styles.applyBtnText}>  Apply for job  </Text>
       </TouchableOpacity>
     </View>
   )
